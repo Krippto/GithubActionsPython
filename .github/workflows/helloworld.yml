@@ -19,4 +19,4 @@ jobs:
         python-version: '3.x'
 
     - name: Run Hello World App
-      run: python hello.py.
+      run: python3 hello.py.

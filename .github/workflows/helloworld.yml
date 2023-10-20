@@ -19,4 +19,4 @@ jobs:
     #     python-version: '3.x'
 
     - name: Run Hello World App
-      run: python3 hello.py.
+      run: python .github/workflows/hello.py.

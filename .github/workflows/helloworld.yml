@@ -1,7 +1,9 @@
 name: Hello World (Python)
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   hello-world:
@@ -11,10 +13,10 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    # - name: Set up Python
-    #   uses: actions/setup-python@v2
-    #   with:
-    #     python-version: '3.x'
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
     - name: Run Hello World App
       run: python .github/workflows/hello.py

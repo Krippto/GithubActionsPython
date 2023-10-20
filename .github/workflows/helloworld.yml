@@ -13,10 +13,10 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+    # - name: Set up Python
+    #   uses: actions/setup-python@v2
+    #   with:
+    #     python-version: '3.x'
 
     - name: Run Hello World App
       run: python3 hello.py.

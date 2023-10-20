@@ -1,9 +1,7 @@
 name: Hello World (Python)
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   hello-world:
@@ -19,4 +17,4 @@ jobs:
     #     python-version: '3.x'
 
     - name: Run Hello World App
-      run: python .github/workflows/hello.py.
+      run: python .github/workflows/hello.py
